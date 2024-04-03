@@ -27,7 +27,6 @@ module.exports = defineConfig({
                   fullySpecified: false,
                 },
               },
-              // Include other rules if necessary
             ],
           },
         },

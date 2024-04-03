@@ -11,7 +11,7 @@ module.exports = (on, config) => {
                     {
                         test: /\.m?js$/,
                         resolve: {
-                            fullySpecified: false, // This line is important for your issue
+                            fullySpecified: false,
                         },
                     },
                 ],

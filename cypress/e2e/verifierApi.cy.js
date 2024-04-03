@@ -42,7 +42,8 @@ describe('Delete Task via API', () => {
             headers: {
                 'accept': '*/*',
                 'Authorization': `Bearer ${authToken}`
-            }
+            },
+            failOnStatusCode: false
         }).then((response) => {
             expect(response.status).to.eq(204);
             cy.log(`Task deleted with ID: ${taskIdToDelete}`);

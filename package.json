@@ -4,7 +4,7 @@
   "description": "ui tests",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cypress run",
     "cy:dashboard": "npx cypress run --record --key fd9576db-c01f-4355-be69-20fc6121d96c",
     "cy:open": "npx cypress open",
     "cy:run": "npx cypress run",

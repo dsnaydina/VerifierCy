@@ -16,5 +16,10 @@ jobs:
       - name: Install dependencies
         run: npm install
       
-      - name: Run tests
+      - name: Set up environment variables
+        env:
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+        run: echo "export AUTH_TOKEN=${AUTH_TOKEN}" >> $GITHUB_ENV
+      
+      - name: Run tests with authentication
         run: npm test

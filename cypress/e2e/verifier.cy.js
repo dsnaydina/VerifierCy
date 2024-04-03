@@ -6,8 +6,7 @@ describe('First test suite', () => {
    const taskPage = new TaskPage();
 
    beforeEach(() => {
-      // Assuming LoginPage has a method to perform login
-      cy.visit("/login"); // Make sure this is the correct URL
+      cy.visit("/login");
       loginPage.login("admin_automation", "admin_automation");
       cy.get('[data-cy="TaskHeading"] > span').should('be.visible');
    });
@@ -15,6 +14,5 @@ describe('First test suite', () => {
    it('Login, create, delete task', function () {
       taskPage.navigateToTasks();
       taskPage.createTask('Task for CYPRESS', 'TEXT', 'ANSWER');
-      // Assuming there's a method to confirm task creation or you add assertions here
    });
 });

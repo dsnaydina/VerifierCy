@@ -6,7 +6,7 @@ describe('Negative Tests - Task API', () => {
 
             text: null,
             answer: true,
-            title: true
+            title: false
         };
 
         cy.log('Attempting to create a task with invalid data:');

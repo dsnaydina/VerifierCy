@@ -5,7 +5,7 @@ describe('Negative Tests - Task API', () => {
         const invalidTaskData = {
 
             text: null,
-            answer: 123,
+            answer: true,
             title: true
         };
 
